@@ -1,0 +1,112 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me desculpa ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            border: none;
+            padding: 13px 28px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        .sim {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        .nao {
+            background-color: #eeeeee;
+            color: #333;
+        }
+
+        #mensagem {
+            display: none;
+            margin-top: 25px;
+            color: #ff4d6d;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Me desculpa ❤️</h1>
+
+        <p>Você me desculpa?</p>
+
+        <div class="botoes">
+            <button class="sim" onclick="desculpa()">Sim</button>
+            <button class="nao" onclick="desculpa()">Não</button>
+        </div>
+
+        <div id="mensagem">
+            Obrigado por me desculpar! ❤️🥹
+        </div>
+    </div>
+
+    <script>
+        function desculpa() {
+            document.getElementById("mensagem").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+```
